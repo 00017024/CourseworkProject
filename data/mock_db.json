@@ -6,7 +6,30 @@
             "eventDateTime": "01/01/2021 01:20",
             "venue": "Tinchlik Palace",
             "contactPhone": "+998711234567",
-            "seat": "15 rows 8D"
+            "seat": "15 rows 8D",
+            "price": "$25"
+        }
+    },
+    {
+        "id": "tn76",
+        "ticket": {
+            "eventName": "Bunyodkor vs Pakhtakor",
+            "eventDateTime": "27/03/2024 17:52",
+            "venue": "Bunyodkor stadium",
+            "contactPhone": "+998332143689",
+            "seat": "34B",
+            "price": "$10"
+        }
+    },
+    {
+        "id": "Xn8n",
+        "ticket": {
+            "eventName": "Navroz Festival",
+            "eventDateTime": "21/03/2024 18:34",
+            "venue": "Mustaqillik Palace",
+            "contactPhone": "+998332436983",
+            "seat": "68C",
+            "price": "$14"
         }
     }
 ]

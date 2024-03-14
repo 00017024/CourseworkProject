@@ -1,12 +1,17 @@
 include ../head.pug
+style.
+  body {
+    background-color: lightblue;
+     
+  }
 body
     .container.mt-5
       .row.d-flex.align-items-center
         .col-md-6
           h1 List
         .col-md-6.text-end
-          a.btn.btn-success(href='/add', role='button') Add      
-      table.table.table-responsive.table-hover.table-striped.table-dark
+          a.btn.btn-success(href='/add', role='button') New Event      
+      table.table.table-responsive.table-hover.table-striped.table
         thead
           tr
             th(scope="col") ID
@@ -15,8 +20,10 @@ body
             th(scope="col") Venue
             th(scope="col") Contact Phone
             th(scope="col") Seat
-            th(scope="col") Actions
+            th(scope="col") Price
+            th(scope="col") Actions    
         tbody
+        footer.align-items-center This web application was created to fulfill Web Technology module’s requirements and does not represent an actual company or service
 script.
   document.addEventListener('DOMContentLoaded', function() {
     axios.get('/api/ticket').then(function(response) {
@@ -32,6 +39,7 @@ script.
           <td>${ticket.venue}</td>
           <td>${ticket.contactPhone}</td>
           <td>${ticket.seat}</td>
+          <td>${ticket.price}</td>
           <td>
             <button class="btn btn-primary btn-sm" data-id="${t.id}" onclick="window.location.href='/update/${t.id}'">Update</button>
             <button class="btn btn-danger btn-sm" data-id="${t.id}">Delete</button>
@@ -59,3 +67,5 @@ script.
     });
     
   });
+  
+  

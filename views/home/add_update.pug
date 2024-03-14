@@ -1,4 +1,8 @@
 include ../head.pug
+style.
+  body {
+    background-color: lightblue;    
+  }
 body
   .container.mt-5
     h1 #{mode}
@@ -21,6 +25,9 @@ body
     .mb-3
       label(for="seat" class="form-label") Seat
       input(type="text" class="form-control" id="seat" name="seat" required)
+    .mb-3
+      label(for="price" class="form-label") Price
+      input(type="price" class="form-control" id="price" name="price" required)
     button(type="submit" class="btn btn-success" onclick="submitForm()") #{mode === 'Update' ? 'Update' : 'Add'}
     span &nbsp;
     button(type="submit" class="btn btn-primary" onclick="window.location.href='/'") Back to list
