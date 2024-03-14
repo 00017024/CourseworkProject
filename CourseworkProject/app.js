@@ -10,7 +10,7 @@ const path = require('path')
 // make mock database (raw .json file) available globally in app
 global.mock_db = path.join(__dirname, './data/mock_db.json');
 
-const web_route = require('./routes/web/home')
+const web_route = require('./routes/api/web/home')
 const api_route = require('./routes/api');
 
 const app = express();
