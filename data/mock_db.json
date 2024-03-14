@@ -1,0 +1,12 @@
+[
+    {
+        "id": "00017024",
+        "ticket": {
+            "eventName": "Concert of David Garret",
+            "eventDateTime": "01/01/2021 01:20",
+            "venue": "Tinchlik Palace",
+            "contactPhone": "+998711234567",
+            "seat": "15 rows 8D"
+        }
+    }
+]
